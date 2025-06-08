@@ -2,3 +2,5 @@
 /node_modules
 /server/node_modules
 /server/.env
+/Elixer/.env
+/.env
