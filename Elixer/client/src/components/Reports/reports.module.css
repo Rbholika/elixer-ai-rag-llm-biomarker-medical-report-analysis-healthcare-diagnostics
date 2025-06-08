@@ -1,0 +1,191 @@
+.main_container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.navbar h1 {
+    color: white;
+    margin: 0;
+}
+
+.white_btn {
+    background-color: white;
+    color: #2c3e50;
+    padding: 10px 15px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.white_btn:hover {
+    background-color: #e9ecef;
+}
+
+.title_container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 20px; /* Adds spacing between the icon and title */
+}
+
+.home_icon {
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: white; /* Icon color (green) */
+    cursor: pointer;
+}
+
+.reports_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.header p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.buttons_container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 40px;
+}
+
+.button_card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    width: 45%;
+    min-height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.button_card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.card_text {
+    flex: 1;
+    z-index: 2;
+}
+
+.card_text h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.card_text p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.card_image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.card_image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.button_card:hover .card_image {
+    transform: scale(1.1);
+}
+
+/* Background colors for cards with gradient overlay */
+.labtests {
+    background: linear-gradient(135deg, #EBECF1 0%, #f8f9fa 100%);
+}
+
+.chatdoctor {
+    background: linear-gradient(135deg, #E3EEED 0%, #f0f7f6 100%);
+}
+
+/* Add a subtle pattern overlay */
+.button_card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.add_new_btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2c3e50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add_new_btn:hover {
+    background-color: #2980b9;
+}

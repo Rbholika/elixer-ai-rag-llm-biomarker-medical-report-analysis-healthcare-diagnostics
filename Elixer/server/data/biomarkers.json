@@ -1,0 +1,902 @@
+{
+    "Hemoglobin": {
+    "description": "Hemoglobin is a protein found in red blood cells that is essential for carrying oxygen from the lungs to the rest of the body and returning carbon dioxide to the lungs for exhalation. Low hemoglobin levels may indicate anemia, blood loss, or nutritional deficiencies, while high levels can result from dehydration, smoking, or certain medical conditions.",
+    "unit": "g/dL",
+    "referenceRange": { "min": 13.8, "max": 17.2 },
+    "aliases": ["Hemoglobin (Hb)"]
+  },
+  "WhiteBloodCells": {
+    "description": "White blood cells (WBCs) are an integral part of the immune system, helping the body fight infections, inflammation, and foreign invaders. Abnormal WBC counts can indicate conditions such as infections, stress, inflammation, or immune system disorders.",
+    "unit": "cmm",
+    "referenceRange": { "min": 4000, "max": 11000 },
+    "aliases": ["WBC", "Total WBC count"]
+  },
+  "Platelets": {
+    "description": "Platelets, also known as thrombocytes, are tiny blood cells that help your body form clots to stop bleeding. Low platelet counts may result in excessive bleeding, while high counts can lead to clotting disorders.",
+    "unit": "cmm",
+    "referenceRange": { "min": 150000, "max": 450000 },
+    "aliases": ["PLT", "Platelet Count"]
+  },
+  "RedBloodCells": {
+    "description": "Red blood cells (RBCs) transport oxygen to tissues and remove carbon dioxide from the body. Abnormal RBC counts may indicate anemia, blood loss, or conditions affecting oxygen transport.",
+    "unit": "million cells/mcL",
+    "referenceRange": { "min": 4.7, "max": 6.1 },
+    "aliases": ["RBC", "Total RBC count"]
+  },
+  "Packed Cell Volume (PCV)": {
+    "description": "PCV measures the proportion of blood volume occupied by red blood cells. High PCV may indicate dehydration, while low PCV can suggest anemia.",
+    "unit": "%",
+    "referenceRange": { "min": 40, "max": 50 },
+    "aliases": ["PCV", "Hematocrit"]
+  },
+  "Mean Corpuscular Volume (MCV)": {
+    "description": "MCV measures the average volume of red blood cells. High values indicate macrocytosis, while low values suggest microcytosis.",
+    "unit": "fL",
+    "referenceRange": { "min": 83, "max": 101 },
+    "aliases": ["MCV"]
+  },
+  "Mean Corpuscular Hemoglobin (MCH)": {
+    "description": "MCH indicates the average amount of hemoglobin per red blood cell. Abnormal values may signal anemia.",
+    "unit": "pg",
+    "referenceRange": { "min": 27, "max": 32 },
+    "aliases": ["MCH"]
+  },
+  "Mean Corpuscular Hemoglobin Concentration (MCHC)": {
+    "description": "MCHC measures the concentration of hemoglobin in red blood cells. Low values may indicate hypochromic anemia.",
+    "unit": "g/dL",
+    "referenceRange": { "min": 32.5, "max": 34.5 },
+    "aliases": ["MCHC"]
+  },
+  "Red Cell Distribution Width (RDW)": {
+    "description": "RDW indicates the variation in red blood cell size. High RDW may suggest mixed anemia types.",
+    "unit": "%",
+    "referenceRange": { "min": 11.6, "max": 14.0 },
+    "aliases": ["RDW"]
+  },
+  "Neutrophils": {
+    "description": "Neutrophils are a type of white blood cell that fight infections caused by bacteria and fungi. Abnormal neutrophil counts may indicate infections, inflammation, or immune system disorders.",
+    "unit": "%",
+    "referenceRange": { "min": 40, "max": 60 },
+    "aliases": ["Neu"]
+  },
+  "Lymphocytes": {
+    "description": "Lymphocytes are white blood cells that play a key role in immune responses against viruses and bacteria. High counts may indicate infections or autoimmune diseases, while low counts may result from immune suppression.",
+    "unit": "%",
+    "referenceRange": { "min": 20, "max": 40 },
+    "aliases": ["Lymph"]
+  },
+  "Monocytes": {
+    "description": "Monocytes are white blood cells that engulf and digest pathogens and debris. Elevated levels may indicate chronic inflammation or infection.",
+    "unit": "%",
+    "referenceRange": { "min": 2, "max": 8 },
+    "aliases": ["Mono"]
+  },
+  "Eosinophils": {
+    "description": "Eosinophils are involved in allergic reactions and the body's response to parasitic infections. High counts may indicate allergies or parasitic infections.",
+    "unit": "%",
+    "referenceRange": { "min": 1, "max": 4 },
+    "aliases": ["Eos"]
+  },
+  "Basophils": {
+    "description": "Basophils are white blood cells involved in allergic reactions and inflammation. Elevated basophil counts may indicate allergies, chronic inflammation, or certain blood disorders.",
+    "unit": "%",
+    "referenceRange": { "min": 0, "max": 2 },
+    "aliases": ["Baso"]
+  },
+  "SerumIron": {
+    "description": "Serum iron measures the amount of iron circulating in the blood. Iron is essential for producing hemoglobin and supporting oxygen transport. Low levels can indicate iron deficiency anemia, while high levels may suggest iron overload conditions like hemochromatosis.",
+    "unit": "mcg/dL",
+    "referenceRange": { "min": 60, "max": 170 },
+    "aliases": ["Iron", "Serum Fe"]
+  },
+  "TotalIronBindingCapacity": {
+    "description": "Total Iron Binding Capacity (TIBC) measures the blood's ability to bind iron to transferrin, a transport protein. High TIBC levels often indicate iron deficiency anemia, while low levels may suggest chronic diseases or iron overload.",
+    "unit": "mcg/dL",
+    "referenceRange": { "min": 250, "max": 450 },
+    "aliases": ["TIBC", "Iron Binding Capacity"]
+  },
+  "TransferrinSaturation": {
+    "description": "Transferrin Saturation calculates the percentage of transferrin proteins saturated with iron. Low saturation levels indicate iron deficiency, while high levels may be associated with iron overload conditions like hemochromatosis.",
+    "unit": "%",
+    "referenceRange": { "min": 20, "max": 50 },
+    "aliases": ["TSAT", "Transferrin Sat"]
+  },
+  "Ferritin": {
+    "description": "Ferritin is a protein that stores iron and releases it as needed. It reflects the body's iron reserves. Low levels are an early indicator of iron deficiency, while high levels may result from inflammation, liver disease, or iron overload disorders.",
+    "unit": "ng/mL",
+    "referenceRange": { "min": 12, "max": 300 },
+    "aliases": ["Ferritin Level"]
+  },
+  "Creatinine": {
+    "description": "Creatinine is a waste product of muscle metabolism, filtered out of the blood by the kidneys. It is a key marker of kidney function. Elevated levels may indicate impaired kidney function, while low levels can result from reduced muscle mass or malnutrition.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 0.74, "max": 1.35 },
+    "aliases": ["Cr", "Creat"]
+  },
+  "BloodUreaNitrogen": {
+    "description": "Blood Urea Nitrogen (BUN) measures the amount of nitrogen in the blood that comes from urea, a waste product of protein metabolism. High BUN levels may indicate kidney dysfunction or dehydration, while low levels can suggest liver disease or a low-protein diet.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 7, "max": 20 },
+    "aliases": ["BUN", "BUN/Creatinine Ratio"]
+  },
+  "AlanineTransaminase": {
+    "description": "Alanine Transaminase (ALT) is an enzyme primarily found in the liver. It plays a vital role in metabolizing proteins. Elevated ALT levels can indicate liver damage or diseases such as hepatitis, fatty liver disease, or alcohol-related liver injury. Low levels are typically not a cause for concern.",
+    "unit": "U/L",
+    "referenceRange": { "min": 7, "max": 56 },
+    "aliases": ["ALT", "SGPT"]
+  },
+  "AspartateTransaminase": {
+    "description": "Aspartate Transaminase (AST) is an enzyme found in the liver, heart, and muscles. It is released into the blood when these tissues are damaged. Elevated AST levels may indicate liver damage, heart conditions, or muscle injuries.",
+    "unit": "U/L",
+    "referenceRange": { "min": 10, "max": 40 },
+    "aliases": ["AST", "SGOT"]
+  },
+  "AlkalinePhosphatase": {
+    "description": "Alkaline Phosphatase (ALP) is an enzyme found in the liver, bones, and bile ducts. Elevated ALP levels can indicate liver disease, bile duct obstruction, or bone disorders such as osteoporosis.",
+    "unit": "U/L",
+    "referenceRange": { "min": 44, "max": 147 },
+    "aliases": ["ALP"]
+  },
+  "BilirubinTotal": {
+    "description": "Total Bilirubin measures the overall levels of bilirubin in the blood, including both direct and indirect forms. It is a byproduct of red blood cell breakdown. Elevated bilirubin levels may cause jaundice and indicate liver dysfunction, bile duct obstruction, or hemolysis.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 0.1, "max": 1.2 },
+    "aliases": ["Total Bilirubin", "TBili"]
+  },
+  "BilirubinDirect": {
+    "description": "Direct Bilirubin, or conjugated bilirubin, is bilirubin that has been processed by the liver and is ready for excretion. Elevated levels may indicate liver disease, bile duct obstruction, or certain inherited conditions like Dubin-Johnson syndrome.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 0.0, "max": 0.3 },
+    "aliases": ["Direct Bilirubin", "DBili"]
+  },
+  "BilirubinIndirect": {
+    "description": "Indirect Bilirubin, or unconjugated bilirubin, is a form of bilirubin that has not yet been processed by the liver. Elevated levels may result from increased red blood cell breakdown, as seen in hemolysis or conditions like Gilbert's syndrome.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 0.2, "max": 0.8 },
+    "aliases": ["Indirect Bilirubin", "IBili"]
+  },
+  "ProthrombinTime": {
+    "description": "Prothrombin Time (PT) measures the time it takes for blood to clot. It is used to evaluate clotting disorders and monitor patients on blood-thinning medications. Prolonged PT may indicate liver disease, vitamin K deficiency, or clotting factor deficiencies.",
+    "unit": "seconds",
+    "referenceRange": { "min": 11, "max": 13.5 },
+    "aliases": ["PT", "Protime"]
+  },
+  "InternationalNormalizedRatio": {
+    "description": "International Normalized Ratio (INR) is a standardized measure of blood clotting time based on PT. It is used to monitor patients on anticoagulant therapy. High INR values indicate a higher risk of bleeding, while low values suggest a higher risk of clotting.",
+    "unit": "ratio",
+    "referenceRange": { "min": 0.8, "max": 1.2 },
+    "aliases": ["INR"]
+  },
+  "PartialThromboplastinTime": {
+    "description": "Partial Thromboplastin Time (PTT) measures the efficiency of the blood clotting process. Prolonged PTT may indicate clotting factor deficiencies, liver disease, or the presence of specific anticoagulants such as heparin.",
+    "unit": "seconds",
+    "referenceRange": { "min": 25, "max": 35 },
+    "aliases": ["PTT", "aPTT"]
+  },
+  "BloodGlucose": {
+    "description": "Blood Glucose levels indicate the amount of sugar in the blood. It is a critical parameter for diagnosing and managing diabetes. High levels (hyperglycemia) may indicate diabetes, while low levels (hypoglycemia) can cause symptoms such as dizziness, confusion, or fainting.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 70, "max": 100 },
+    "aliases": ["Glucose", "Fasting Blood Sugar", "Random Blood Sugar", "FBS", "RBS"]
+  },
+  "HemoglobinA1C": {
+    "description": "Hemoglobin A1C provides an average blood sugar level over the past 2-3 months. It is a key indicator for diagnosing and managing diabetes. High A1C levels suggest poorly controlled blood sugar, while normal levels indicate effective glucose management.",
+    "unit": "%",
+    "referenceRange": { "min": 4.0, "max": 5.6 },
+    "aliases": ["HbA1c", "Glycated Hemoglobin", "Hemoglobin A1c"]
+  },
+  "C-ReactiveProtein": {
+    "description": "C-Reactive Protein (CRP) is a marker of inflammation produced by the liver. Elevated CRP levels can indicate infections, inflammatory conditions like rheumatoid arthritis, or cardiovascular diseases. High-sensitivity CRP (hs-CRP) is used to assess heart disease risk.",
+    "unit": "mg/L",
+    "referenceRange": { "min": 0.0, "max": 3.0 },
+    "aliases": ["CRP", "hs-CRP"]
+  },
+  "ErythrocyteSedimentationRate": {
+    "description": "Erythrocyte Sedimentation Rate (ESR) measures how quickly red blood cells settle at the bottom of a test tube. Elevated ESR levels indicate inflammation, infections, or autoimmune conditions. Low ESR levels are generally not significant clinically.",
+    "unit": "mm/hr",
+    "referenceRange": { "min": 0, "max": 20 },
+    "aliases": ["ESR", "Sedimentation Rate"]
+  },
+  "Sodium": {
+    "description": "Sodium is an essential electrolyte that helps regulate fluid balance, blood pressure, and nerve function. Abnormal sodium levels, such as hyponatremia (low) or hypernatremia (high), can result from dehydration, kidney dysfunction, or certain medications.",
+    "unit": "mmol/L",
+    "referenceRange": { "min": 135, "max": 145 },
+    "aliases": ["Na"]
+  },
+  "Potassium": {
+    "description": "Potassium is a critical electrolyte for muscle contractions, nerve signals, and heart function. Abnormal potassium levels, including hypokalemia (low) and hyperkalemia (high), can lead to muscle weakness, arrhythmias, or other health complications.",
+    "unit": "mmol/L",
+    "referenceRange": { "min": 3.5, "max": 5.0 },
+    "aliases": ["Pot"]
+  },
+  "Calcium": {
+    "description": "Calcium is essential for bone health, muscle function, and nerve signaling. Low calcium levels (hypocalcemia) may indicate vitamin D deficiency or parathyroid disorders, while high levels (hypercalcemia) can result from overactive parathyroid glands or certain cancers.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 8.6, "max": 10.3 },
+    "aliases": ["Calcium"]
+  },
+  "Magnesium": {
+    "description": "Magnesium is involved in muscle function, nerve signaling, and energy production. Low magnesium levels (hypomagnesemia) can cause muscle cramps, weakness, or irregular heart rhythms, while high levels (hypermagnesemia) are rare and often result from kidney dysfunction.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 1.7, "max": 2.2 },
+    "aliases": ["Magnesium"]
+  },
+  "Phosphate": {
+    "description": "Phosphate is critical for bone health, energy production, and cellular function. Abnormal phosphate levels can indicate kidney disorders, vitamin D imbalances, or hormonal dysfunctions, such as hyperparathyroidism or hypoparathyroidism.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 2.5, "max": 4.5 },
+    "aliases": ["Phosphorus", "P"]
+  },
+  "TotalProtein": {
+    "description": "Total Protein measures the total amount of proteins in the blood, including albumin and globulin. Proteins are essential for maintaining fluid balance, immune function, and transporting nutrients. Low total protein levels may indicate liver or kidney disease, malnutrition, or malabsorption. High levels may result from chronic inflammation, infections, or certain cancers like multiple myeloma.",
+    "unit": "g/dL",
+    "referenceRange": { "min": 6.0, "max": 8.3 },
+    "aliases": ["TP", "Total Serum Protein"]
+  },
+  "Albumin": {
+    "description": "Albumin is a protein produced by the liver that helps maintain fluid balance and transport hormones, vitamins, and drugs. Low albumin levels can indicate liver disease, kidney dysfunction, or malnutrition. High levels are less common and may result from dehydration.",
+    "unit": "g/dL",
+    "referenceRange": { "min": 3.5, "max": 5.0 },
+    "aliases": ["Alb"]
+  },
+  "Globulin": {
+    "description": "Globulin is a group of proteins involved in immune system function, transporting nutrients, and blood clotting. Abnormal globulin levels may indicate liver disease, immune disorders, or chronic infections.",
+    "unit": "g/dL",
+    "referenceRange": { "min": 2.0, "max": 3.5 },
+    "aliases": ["Glob"]
+  },
+  "AlbuminGlobulinRatio": {
+    "description": "The Albumin-Globulin Ratio compares the levels of albumin to globulin in the blood. A low ratio may indicate liver disease, kidney disorders, or infections. A high ratio may occur with dehydration or certain genetic conditions.",
+    "unit": "ratio",
+    "referenceRange": { "min": 1.0, "max": 2.5 },
+    "aliases": ["A/G Ratio"]
+  },
+  "ThyroidStimulatingHormone": {
+    "description": "Thyroid-Stimulating Hormone (TSH) regulates thyroid gland activity, including the production of thyroid hormones T3 and T4. High TSH levels often indicate hypothyroidism, while low TSH levels may suggest hyperthyroidism or other thyroid dysfunctions.",
+    "unit": "mIU/L",
+    "referenceRange": { "min": 0.4, "max": 4.0 },
+    "aliases": ["TSH"]
+  },
+  "FreeT3": {
+    "description": "Free T3 (Triiodothyronine) measures the active form of the thyroid hormone T3 in the blood. It plays a key role in metabolism, energy production, and overall thyroid function. Abnormal Free T3 levels may indicate thyroid disorders such as hypothyroidism or hyperthyroidism.",
+    "unit": "pg/mL",
+    "referenceRange": { "min": 2.3, "max": 4.1 },
+    "aliases": ["FT3", "Triiodothyronine", "Triiodothyronine (T3), Free"]
+  },
+  "FreeT4": {
+    "description": "Free T4 (Thyroxine) measures the unbound, active form of the thyroid hormone T4 in the blood. It helps regulate metabolism and energy balance. Low levels indicate hypothyroidism, while high levels suggest hyperthyroidism.",
+    "unit": "ng/dL",
+    "referenceRange": { "min": 0.8, "max": 1.8 },
+    "aliases": ["FT4", "Thyroxine", "T4,Free(Direct)"]
+  },
+  "VitaminB12": {
+    "description": "Vitamin B12 is essential for the production of red blood cells, DNA synthesis, and proper nerve function. Low Vitamin B12 levels can lead to anemia, fatigue, and neurological issues. High levels are typically due to supplementation.",
+    "unit": "pg/mL",
+    "referenceRange": { "min": 200, "max": 900 },
+    "aliases": ["B12", "Cobalamin", "Vitamin B12"]
+  },
+  "Folate": {
+    "description": "Folate (Vitamin B9) is crucial for DNA synthesis, cell division, and red blood cell production. Low folate levels can result in megaloblastic anemia, fatigue, and birth defects during pregnancy.",
+    "unit": "ng/mL",
+    "referenceRange": { "min": 2.5, "max": 20.0 },
+    "aliases": ["Vitamin B9", "Folic Acid"]
+  },
+  "ReticulocyteCount": {
+    "description": "Reticulocyte Count measures the number of immature red blood cells in the blood. Elevated levels indicate increased red blood cell production, often in response to anemia or blood loss, while low levels may suggest bone marrow dysfunction.",
+    "unit": "%",
+    "referenceRange": { "min": 0.5, "max": 2.5 },
+    "aliases": ["Retic Count"]
+  },
+  "MeanPlateletVolume": {
+    "description": "Mean Platelet Volume (MPV) reflects the average size of platelets in the blood. High MPV levels may indicate active platelet production in response to conditions like inflammation, while low levels suggest bone marrow dysfunction or chronic conditions.",
+    "unit": "fL",
+    "referenceRange": { "min": 7.5, "max": 12.0 },
+    "aliases": ["MPV"]
+  },
+  "TotalCholesterol": {
+    "description": "Total Cholesterol measures the combined levels of LDL (bad cholesterol), HDL (good cholesterol), and other lipid components in the blood. Elevated cholesterol levels increase the risk of heart disease and stroke.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 0, "max": 200 },
+    "aliases": ["TC", "Total Chol", "Cholestrol Total"]
+  },
+  "LDLCholesterol": {
+    "description": "Low-Density Lipoprotein (LDL) Cholesterol, often referred to as 'bad cholesterol,' can build up in the arteries, leading to plaque formation and an increased risk of heart disease and stroke.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 0, "max": 130 },
+    "aliases": ["LDL", "LDL-C"]
+  },
+  "HDLCholesterol": {
+    "description": "High-Density Lipoprotein (HDL) Cholesterol is known as 'good cholesterol' because it helps remove other forms of cholesterol from the bloodstream, reducing the risk of heart disease and stroke.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 40, "max": 60 },
+    "aliases": ["HDL", "HDL-C"]
+  },
+  "Triglycerides": {
+    "description": "Triglycerides are a type of fat in the blood that the body uses for energy. Elevated triglyceride levels are associated with an increased risk of heart disease, obesity, and metabolic syndrome.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 0, "max": 150 },
+    "aliases": ["TG"]
+  },
+  "VLDLCholesterol": {
+    "description": "Very Low-Density Lipoprotein (VLDL) Cholesterol is a type of 'bad cholesterol' that contributes to the buildup of plaque in the arteries, increasing the risk of heart disease.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 0, "max": 30 },
+    "aliases": ["VLDL", "VLDL-C"]
+  },
+  "NonHDLCholesterol": {
+    "description": "Non-HDL Cholesterol includes all 'bad cholesterol' types, such as LDL and VLDL. It is considered a more comprehensive measure of cardiovascular risk compared to LDL alone.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 0, "max": 160 },
+    "aliases": ["Non-HDL", "Non-HDL-C"]
+  },
+  "CholesterolRatio": {
+    "description": "The Cholesterol Ratio compares total cholesterol to HDL levels. A higher ratio suggests an increased risk of heart disease, while a lower ratio indicates better cardiovascular health.",
+    "unit": "ratio",
+    "referenceRange": { "min": 0, "max": 5 },
+    "aliases": ["TC/HDL Ratio", "Cholesterol/HDL Ratio"]
+  },
+  "Microalbumin": {
+    "description": "Microalbumin measures small amounts of albumin in the urine. It is an early indicator of kidney damage, especially in patients with diabetes or hypertension.",
+    "unit": "mg/L",
+    "referenceRange": { "min": 0, "max": 30 },
+    "aliases": ["Microalb"]
+  },
+  "UricAcid": {
+    "description": "Uric Acid is a waste product formed from the breakdown of purines found in certain foods and body tissues. Elevated levels can lead to gout or kidney stones, while low levels are less common and often not clinically significant.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 3.5, "max": 7.2 },
+    "aliases": ["UA"]
+  },
+  "UrineColor": {
+    "description": "Urine color can provide clues to hydration levels, infections, or presence of blood or bilirubin.",
+    "unit": "Visual",
+    "referenceRange": { "min": "Pale yellow", "max": "Amber" },
+    "aliases": ["Urine Color"]
+  },
+  "UrinepH": {
+    "description": "Urine pH reflects the acidity or alkalinity of urine. Abnormal pH may indicate infection, kidney stones, or diet imbalance.",
+    "unit": "pH",
+    "referenceRange": { "min": 4.5, "max": 8.0 },
+    "aliases": ["pH"]
+  },
+  "UrineProtein": {
+    "description": "Protein in urine may indicate kidney damage, infection, or preeclampsia in pregnancy.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 0, "max": 20 },
+    "aliases": ["Proteinuria"]
+  },
+  "UrineGlucose": {
+    "description": "Presence of glucose in urine may indicate uncontrolled diabetes or kidney dysfunction.",
+    "unit": "mg/dL",
+    "referenceRange": { "min": 0, "max": 15 },
+    "aliases": ["Glucosuria"]
+  },
+  "UrineLeukocyteEsterase": {
+    "description": "Indicates white blood cells in urine; may suggest a urinary tract infection (UTI).",
+    "unit": "Positive/Negative",
+    "referenceRange": { "min": "Negative", "max": "Negative" },
+    "aliases": ["LE"]
+  },
+  "UrineNitrites": {
+    "description": "Nitrites suggest bacterial infection in the urinary tract.",
+    "unit": "Positive/Negative",
+    "referenceRange": { "min": "Negative", "max": "Negative" },
+    "aliases": ["Nitrites"]
+  },
+  "Beta2Microglobulin": {
+      "description": "β2-Microglobulin (β2M) is a marker of kidney tubular function. Elevated levels may indicate tubular dysfunction or renal disease.",
+      "unit": "mg/L",
+      "referenceRange": { "min": 0.02, "max": 0.25 },
+      "aliases": ["β2M", "Beta-2-M"]
+    },
+    "BetaTraceProtein": {
+      "description": "Beta-Trace Protein (BTP) is used to evaluate glomerular filtration and early kidney damage.",
+      "unit": "mg/L",
+      "referenceRange": { "min": 0.7, "max": 1.3 },
+      "aliases": ["BTP"]
+    },
+    "Uromodulin": {
+      "description": "Uromodulin (UMOD) is a kidney-specific protein and serves as a biomarker for tubular function and kidney health.",
+      "unit": "mg/L",
+      "referenceRange": { "min": 10, "max": 150 },
+      "aliases": ["UMOD", "Tamm-Horsfall Protein"]
+    },
+    "NeutrophilGelatinaseAssociatedLipocalin": {
+      "description": "NGAL is an early and sensitive biomarker for acute kidney injury (AKI).",
+      "unit": "ng/mL",
+      "referenceRange": { "min": 0, "max": 150 },
+      "aliases": ["NGAL", "Lipocalin-2"]
+    },
+    "KidneyInjuryMolecule1": {
+      "description": "KIM-1 is a transmembrane protein elevated in proximal tubule injury.",
+      "unit": "ng/mL",
+      "referenceRange": { "min": 0, "max": 2.5 },
+      "aliases": ["KIM-1"]
+    },
+    "Interleukin18": {
+      "description": "IL-18 is a pro-inflammatory cytokine elevated in kidney inflammation and injury.",
+      "unit": "pg/mL",
+      "referenceRange": { "min": 0, "max": 50 },
+      "aliases": ["IL-18"]
+    },
+    "RetinolBindingProtein": {
+      "description": "RBP is a marker of tubular proteinuria and tubular dysfunction.",
+      "unit": "mg/L",
+      "referenceRange": { "min": 0, "max": 0.4 },
+      "aliases": ["RBP"]
+    },
+    "CystatinC": {
+      "description": "Cystatin C is used to assess kidney function and glomerular filtration.",
+      "unit": "mg/L",
+      "referenceRange": { "min": 0.5, "max": 1.0 },
+      "aliases": ["CysC"]
+    },
+    "8Hydroxy2Deoxyguanosine": {
+      "description": "8-OHdG is a marker of oxidative DNA damage, elevated in oxidative stress conditions affecting kidneys.",
+      "unit": "ng/mg creatinine",
+      "referenceRange": { "min": 1, "max": 20 },
+      "aliases": ["8-OHdG"]
+    },
+    "Osteopontin": {
+      "description": "Osteopontin is a biomarker involved in inflammation and renal fibrosis.",
+      "unit": "ng/mL",
+      "referenceRange": { "min": 0, "max": 10 },
+      "aliases": ["OPN"]
+    },
+    "Lipocalin2": {
+      "description": "Lipocalin-2 (LCN2) is released in response to kidney injury and inflammation.",
+      "unit": "ng/mL",
+      "referenceRange": { "min": 0, "max": 150 },
+      "aliases": ["LCN2", "NGAL"]
+    },
+    "Procalcitonin": {
+      "description": "Procalcitonin (PCT) is a marker of systemic inflammation and bacterial infection that can affect kidney function.",
+      "unit": "ng/mL",
+      "referenceRange": { "min": 0, "max": 0.05 },
+      "aliases": ["PCT"]
+    },
+    "Indolyl3Acrylglycine": {
+      "description": "Indolyl-3-acrylglycine (IAG) may be investigated in certain metabolic and neurological conditions.",
+      "unit": "μmol/mol creatinine",
+      "referenceRange": { "min": 0, "max": 5 },
+      "aliases": ["IAG"]
+    },
+    "SpermCount": {
+    "description": "Measures the concentration of sperm in semen. Low sperm count may affect fertility.",
+    "unit": "million/mL",
+    "referenceRange": { "min": 15, "max": 200 },
+    "aliases": ["Sperm Concentration"]
+  },
+  "SpermMotility": {
+    "description": "Assesses the percentage of sperm that can move effectively. Poor motility reduces the chance of fertilization.",
+    "unit": "%",
+    "referenceRange": { "min": 40, "max": 100 },
+    "aliases": ["Motility"]
+  },
+  "SpermMorphology": {
+    "description": "Evaluates the shape and structure of sperm. Abnormal morphology may impair fertilization ability.",
+    "unit": "%",
+    "referenceRange": { "min": 4, "max": 100 },
+    "aliases": ["Morphology"]
+  },
+  "SemenVolume": {
+    "description": "Total volume of semen produced during ejaculation. Abnormally low volume may suggest a blockage or hormonal problem.",
+    "unit": "mL",
+    "referenceRange": { "min": 1.5, "max": 6 },
+    "aliases": ["Volume"]
+  },
+  "pHSemen": {
+    "description": "Semen pH should be slightly alkaline. Deviations may indicate infections or ejaculatory duct issues.",
+    "unit": "pH",
+    "referenceRange": { "min": 7.2, "max": 8.0 },
+    "aliases": ["Semen pH"]
+  },
+  "volume": {
+        "description": "Total volume of semen produced during ejaculation. Abnormally low volume may suggest a blockage or hormonal problem.",
+        "unit": "mL",
+        "referenceRange": { "min": 1.5, "max": 6 },
+        "aliases": ["Seminal Fluid Volume (SFV)", "Volume"]
+      },
+      "concentration": {
+        "description": "Measures the concentration of sperm in semen. Low sperm count may affect fertility.",
+        "unit": "million/mL",
+        "referenceRange": { "min": 15, "max": 200 },
+        "aliases": ["Sperm Concentration (SPC)", "Sperm Count"]
+      },
+      "motility": {
+        "description": "Assesses the percentage of sperm that can move effectively. Poor motility reduces the chance of fertilization.",
+        "unit": "%",
+        "referenceRange": { "min": 40, "max": 100 },
+        "aliases": ["Sperm Motility (SM)", "Motility"]
+      },
+      "morphology": {
+        "description": "Evaluates the shape and structure of sperm. Abnormal morphology may impair fertilization ability.",
+        "unit": "%",
+        "referenceRange": { "min": 4, "max": 100 },
+        "aliases": ["Sperm Morphology (SM)", "Morphology"]
+      },
+      "pH": {
+        "description": "Semen pH should be slightly alkaline. Deviations may indicate infections or ejaculatory duct issues.",
+        "unit": "pH",
+        "referenceRange": { "min": 7.2, "max": 8.0 },
+        "aliases": ["Seminal pH (SPH)", "Semen pH"]
+      },
+      "liquefaction": {
+        "description": "The time it takes for semen to liquefy after ejaculation. Abnormal liquefaction time can be indicative of male reproductive issues.",
+        "unit": "minutes",
+        "referenceRange": { "min": 15, "max": 60 },
+        "aliases": ["Seminal Liquefaction Time (SLT)"]
+      },
+      "viscosity": {
+        "description": "Measures the thickness of semen. High viscosity can reduce sperm motility.",
+        "unit": "cP (centipoise)",
+        "referenceRange": { "min": 1, "max": 5 },
+        "aliases": ["Seminal Viscosity (SV)"]
+      },
+      "white_blood_cells": {
+        "description": "White blood cells in semen indicate infection or inflammation. High levels may reduce fertility.",
+        "unit": "cells/mL",
+        "referenceRange": { "min": 0, "max": 1000000 },
+        "aliases": ["Leukocyte Count (LC)", "WBC Count"]
+      },
+      "sperm_dna_fragmentation_index": {
+        "description": "Assesses the integrity of sperm DNA; higher values are associated with reduced fertility potential.",
+        "unit": "%",
+        "referenceRange": { "min": 0, "max": 30 },
+        "aliases": ["Sperm DNA Fragmentation Index (DFI)"]
+      },
+      "high_dna_stainable_fraction": {
+        "description": "Indicates the percentage of sperm with immature chromatin, which may affect fertility outcomes.",
+        "unit": "%",
+        "referenceRange": { "min": 30, "max": 80 },
+        "aliases": ["High DNA Stainable Fraction (HDS)"]
+      },
+      "prolactin_induced_protein": {
+        "description": "Involved in modulating immune responses and may play a role in sperm function.",
+        "unit": "ng/mL",
+        "referenceRange": { "min": 0, "max": 5 },
+        "aliases": ["Prolactin-Induced Protein (PIP)"]
+      },
+      "semenogelin_i": {
+        "description": "A major protein in semen that contributes to sperm motility. It is part of the seminal coagulum.",
+        "unit": "mg/mL",
+        "referenceRange": { "min": 1, "max": 10 },
+        "aliases": ["Semenogelin I (SgI)"]
+      },
+      "semenogelin_ii": {
+        "description": "Another major protein in semen that plays a role in semen coagulation.",
+        "unit": "mg/mL",
+        "referenceRange": { "min": 1, "max": 10 },
+        "aliases": ["Semenogelin II (SgII)"]
+      },
+      "prostate_specific_antigen": {
+        "description": "A protease produced by the prostate gland that helps liquefy semen and facilitates sperm motility.",
+        "unit": "ng/mL",
+        "referenceRange": { "min": 0, "max": 4 },
+        "aliases": ["Prostate-Specific Antigen (PSA)"]
+      },
+      "galectin_3_binding_protein": {
+        "description": "A protein involved in sperm-egg binding and may influence fertilization rates.",
+        "unit": "ng/mL",
+        "referenceRange": { "min": 0, "max": 50 },
+        "aliases": ["Galectin-3 Binding Protein (Gal-3BP)"]
+      },
+      "orosomucoid": {
+        "description": "Acute-phase proteins that may play roles in inflammation and immune modulation within the reproductive tract.",
+        "unit": "mg/mL",
+        "referenceRange": { "min": 20, "max": 120 },
+        "aliases": ["Orosomucoid 1 & 2 (ORM1 & ORM2)"]
+      },
+      "decapacitation_factors": {
+        "description": "Substances that prevent premature sperm capacitation; their removal is necessary for fertilization.",
+        "unit": "mg/mL",
+        "referenceRange": { "min": 1, "max": 5 },
+        "aliases": ["Decapacitation Factors (DFs)"]
+      },
+      "protein_c_inhibitor": {
+        "description": "Regulates proteases involved in sperm function; deficiencies may lead to infertility.",
+        "unit": "ng/mL",
+        "referenceRange": { "min": 0, "max": 5 },
+        "aliases": ["Protein C Inhibitor (PCI)"]
+      },
+      "prostasomes": {
+        "description": "Extracellular vesicles from the prostate that support sperm motility and protect against immune responses.",
+        "unit": "particles/mL",
+        "referenceRange": { "min": 100, "max": 1000 },
+        "aliases": ["Prostasomes (PSMs)"]
+      },
+      "sperm_telomere_length": {
+        "description": "Reflects sperm age and DNA integrity; shorter telomeres are linked to reduced fertility.",
+        "unit": "kb (kilobases)",
+        "referenceRange": { "min": 5, "max": 10 },
+        "aliases": ["Sperm Telomere Length (STL)"]
+      },
+        "HPVStatus": {
+          "description": "Detects the presence of high-risk HPV types linked to cervical cancer.",
+          "unit": "Positive/Negative",
+          "referenceRange": { "min": "Negative", "max": "Negative" },
+          "aliases": ["HPV DNA"]
+        },
+        "CytologyResult": {
+          "description": "Identifies abnormal cervical cells that may indicate precancer or cancer.",
+          "unit": "Category",
+          "referenceRange": { "min": "NILM", "max": "HSIL" },
+          "aliases": ["Cytology", "Pap Result"]
+        },
+        "Cellularity": {
+        "description": "Measures the number of cells present in the sample, helping assess the adequacy of the sample and detect abnormalities.",
+        "unit": "Cells/Slide",
+        "referenceRange": { "min": 100, "max": 500 },
+        "aliases": ["Cervical Cell Density", "Adequacy"]
+      },
+      "EndocervicalCells": {
+        "description": "Detects the presence of endocervical cells in the sample, which helps confirm the adequacy of the sample and detect potential abnormalities.",
+        "unit": "Present/Absent",
+        "referenceRange": { "min": "Present", "max": "Absent" },
+        "aliases": ["Endocervical Presence"]
+      },
+      "SquamousCellAbnormalities": {
+        "description": "Identifies any abnormal squamous cells that may indicate dysplasia, a precancerous condition.",
+        "unit": "Category",
+        "referenceRange": { "min": "Normal", "max": "High-Grade Squamous Intraepithelial Lesion (HSIL)" },
+        "aliases": ["Squamous Abnormalities", "SCC"]
+      },
+      "GlandularCellAbnormalities": {
+        "description": "Identifies any abnormal glandular cells, which may indicate a more serious condition or malignancy.",
+        "unit": "Category",
+        "referenceRange": { "min": "Normal", "max": "Atypical Glandular Cells (AGC)" },
+        "aliases": ["Glandular Abnormalities", "Glandular Cells"]
+      },
+      "Koliocytosis": {
+        "description": "Detects the presence of koilocytes (cells infected by HPV) that are indicative of HPV infection or cervical dysplasia.",
+        "unit": "Present/Absent",
+        "referenceRange": { "min": "Absent", "max": "Present" },
+        "aliases": ["HPV-Related Changes", "Koilocytosis"]
+      },
+      "InflammatoryCells": {
+        "description": "Assesses the presence of inflammatory cells in the cervical sample, which may indicate infection or irritation.",
+        "unit": "Cells/Slide",
+        "referenceRange": { "min": 0, "max": 300 },
+        "aliases": ["Inflammation", "Leukocytes"]
+      },
+      "Trichomoniasis": {
+        "description": "Detects the presence of Trichomonas vaginalis, a common sexually transmitted infection that can affect the cervix.",
+        "unit": "Positive/Negative",
+        "referenceRange": { "min": "Negative", "max": "Negative" },
+        "aliases": ["Trichomonas Test", "Trichomoniasis"]
+      },
+      "CandidaInfection": {
+        "description": "Identifies the presence of Candida (yeast) infections that can cause cervical or vaginal discomfort and inflammation.",
+        "unit": "Positive/Negative",
+        "referenceRange": { "min": "Negative", "max": "Negative" },
+        "aliases": ["Yeast Infection", "Candida"]
+      },
+      "p16INK4a": {
+        "description": "A biomarker for high-risk HPV infections, especially for detecting high-grade cervical lesions.",
+        "unit": "Positive/Negative",
+        "referenceRange": { "min": "Negative", "max": "Negative" },
+        "aliases": ["p16INK4a Protein"]
+      },
+      "Ki67": {
+        "description": "A marker for cell proliferation; elevated levels in cervical cells may indicate dysplasia or cancerous changes.",
+        "unit": "Positive/Negative",
+        "referenceRange": { "min": "Negative", "max": "Negative" },
+        "aliases": ["Cell Proliferation Marker"]
+      },
+      "HPVGenotyping": {
+        "description": "Identifies specific high-risk HPV types (such as HPV-16, HPV-18), which are linked to a higher risk of cervical cancer.",
+        "unit": "Types",
+        "referenceRange": { "min": "Negative", "max": "Positive for High-Risk HPV Types" },
+        "aliases": ["HPV Type Detection", "HPV High-Risk Genotyping"]
+      },
+      "MicrobiomeAnalysis": {
+        "description": "Assess the cervical microbiome to determine the presence of bacteria, which may influence susceptibility to infections like HPV.",
+        "unit": "Bacteria Types",
+        "referenceRange": { "min": "Normal Flora", "max": "Dysbiosis" },
+        "aliases": ["Cervical Flora", "Microbiome Profile"]
+      },
+      "DNAHypermethylation": {
+        "description": "Detects the methylation of tumor suppressor genes, which is an early sign of cervical cancer.",
+        "unit": "Positive/Negative",
+        "referenceRange": { "min": "Negative", "max": "Negative" },
+        "aliases": ["Cervical DNA Methylation", "Gene Methylation"]
+      },
+      "OccultBlood": {
+        "description": "Checks for hidden blood in stool, which can indicate bleeding in the gastrointestinal tract.",
+        "unit": "Positive/Negative",
+        "referenceRange": { "min": "Negative", "max": "Negative" },
+        "aliases": ["FOBT", "Fecal Occult Blood"]
+      },
+      "Calprotectin": {
+        "description": "A marker for intestinal inflammation, used to distinguish between IBD and IBS.",
+        "unit": "mcg/g",
+        "referenceRange": { "min": 0, "max": 50 },
+        "aliases": ["Fecal Calprotectin"]
+      },
+      "ParasiteOva": {
+        "description": "Detects eggs of parasites, indicating intestinal parasitic infection.",
+        "unit": "Presence",
+        "referenceRange": { "min": "None", "max": "None" },
+        "aliases": ["Ova and Parasites", "O&P"]
+      },
+      "Lactoferrin": {
+        "description": "A protein that increases in response to intestinal inflammation, often used to differentiate between IBD and other gastrointestinal disorders.",
+        "unit": "mcg/g",
+        "referenceRange": { "min": 0, "max": 7 },
+        "aliases": ["Fecal Lactoferrin"]
+      },
+      "Alpha1Antitrypsin": {
+        "description": "Detects an elevated level of alpha-1 antitrypsin, which can indicate protein leakage from the intestines due to inflammation or damage.",
+        "unit": "mg/g",
+        "referenceRange": { "min": 0, "max": 4 },
+        "aliases": ["Alpha1-AT", "Alpha-1 Antitrypsin"]
+      },
+      "C.diffToxin": {
+        "description": "Detects toxins produced by *Clostridium difficile* (C. diff), a bacterium responsible for gastrointestinal infections.",
+        "unit": "Positive/Negative",
+        "referenceRange": { "min": "Negative", "max": "Negative" },
+        "aliases": ["C. diff Toxin", "Clostridium Difficile"]
+      },
+      "GiardiaAntigen": {
+        "description": "Detects the presence of *Giardia* antigens, indicating a *Giardia* infection (giardiasis), a common parasitic infection.",
+        "unit": "Positive/Negative",
+        "referenceRange": { "min": "Negative", "max": "Negative" },
+        "aliases": ["Giardia Antigen Test", "Giardiasis"]
+      },
+      "CryptosporidiumAntigen": {
+        "description": "Detects the presence of *Cryptosporidium* parasites, which can cause gastrointestinal illness.",
+        "unit": "Positive/Negative",
+        "referenceRange": { "min": "Negative", "max": "Negative" },
+        "aliases": ["Cryptosporidium Test", "Cryptosporidiosis"]
+      },
+      "FatStool": {
+        "description": "Measures the amount of undigested fat in the stool, which can indicate malabsorption disorders like celiac disease or pancreatic insufficiency.",
+        "unit": "g/24 hours",
+        "referenceRange": { "min": 0, "max": 7 },
+        "aliases": ["Fecal Fat Test", "Steatorrhea"]
+      },
+      "GutMicrobiomeProfile": {
+        "description": "Analysis of the microbiota in the stool to assess gut health, including the balance of bacteria that support or impair digestion and immunity.",
+        "unit": "Microbial Composition",
+        "referenceRange": { "min": "Balanced", "max": "Dysbiosis" },
+        "aliases": ["Stool Microbiome", "Gut Flora"]
+      },
+      "Zonulin": {
+        "description": "A protein that regulates the permeability of the intestines, elevated levels can indicate leaky gut syndrome and may be linked to autoimmune conditions.",
+        "unit": "ng/mL",
+        "referenceRange": { "min": 0, "max": 40 },
+        "aliases": ["Zonulin Test", "Leaky Gut Marker"]
+      },
+      "FecalRNA": {
+        "description": "Measures RNA markers that can indicate gastrointestinal infections or inflammatory bowel disease (IBD).",
+        "unit": "Relative Expression",
+        "referenceRange": { "min": "Normal", "max": "Elevated" },
+        "aliases": ["Fecal RNA Test", "Gut Inflammation Marker"]
+      },
+      "BileAcids": {
+        "description": "Detects bile acid malabsorption, which can lead to diarrhea and is often linked to conditions such as Crohn's disease.",
+        "unit": "µmol/L",
+        "referenceRange": { "min": 0, "max": 5 },
+        "aliases": ["Fecal Bile Acids", "Bile Acid Malabsorption"]
+      },
+      "IntestinalTightJunctions": {
+        "description": "Tests the integrity of intestinal tight junctions, which are often disrupted in conditions like IBS, IBD, and celiac disease.",
+        "unit": "ng/mL",
+        "referenceRange": { "min": 0, "max": 30 },
+        "aliases": ["Tight Junction Integrity", "Intestinal Permeability"]
+      },
+      "FecalMyeloperoxidase": {
+        "description": "A marker of neutrophil activity and inflammation, elevated levels can indicate active inflammatory conditions like IBD.",
+        "unit": "ng/g",
+        "referenceRange": { "min": 0, "max": 60 },
+        "aliases": ["Fecal MPO", "Myeloperoxidase"]
+      },
+      "S100A12": {
+        "description": "A protein marker used to identify inflammation and early signs of IBD, particularly Crohn's disease.",
+        "unit": "mcg/g",
+        "referenceRange": { "min": 0, "max": 5 },
+        "aliases": ["Fecal S100A12", "S100A12 Protein"]
+      },
+      "BacterialCulture": {
+        "description": "Identifies bacteria present in a sample, e.g., from throat, skin, or wound.",
+        "unit": "Species",
+        "referenceRange": { "min": "No Growth", "max": "Pathogen Identified" },
+        "aliases": ["Culture"]
+      },
+      "ViralPCR": {
+        "description": "Detects viral genetic material; used for diagnosing infections like COVID-19, HSV, or influenza.",
+        "unit": "Positive/Negative",
+        "referenceRange": { "min": "Negative", "max": "Negative" },
+        "aliases": ["PCR", "Viral Load"]
+      },
+      "FungalCulture": {
+        "description": "Detects fungal infections from skin, nails, or mucosal surfaces.",
+        "unit": "Species",
+        "referenceRange": { "min": "No Growth", "max": "Fungus Identified" },
+        "aliases": ["Fungus Culture"]
+      },
+      "ChlamydiaCulture": {
+        "description": "Identifies *Chlamydia trachomatis* bacteria in samples, typically from the cervix, urethra, or throat.",
+        "unit": "Species",
+        "referenceRange": { "min": "No Growth", "max": "Chlamydia Identified" },
+        "aliases": ["Chlamydia Test", "Chlamydia Culture"]
+      },
+      "GonorrheaCulture": {
+        "description": "Detects *Neisseria gonorrhoeae*, the bacteria responsible for gonorrhea, typically in genital, throat, or rectal samples.",
+        "unit": "Species",
+        "referenceRange": { "min": "No Growth", "max": "Gonorrhea Identified" },
+        "aliases": ["Gonorrhea Test", "Gonorrhea Culture"]
+      },
+      "HPVTest": {
+        "description": "Detects high-risk human papillomavirus (HPV) types associated with cervical cancer, typically from a cervical swab.",
+        "unit": "Positive/Negative",
+        "referenceRange": { "min": "Negative", "max": "Negative" },
+        "aliases": ["HPV DNA Test"]
+      },
+      "HerpesSimplexPCR": {
+        "description": "Detects *Herpes Simplex Virus* (HSV) types 1 and 2 from skin, mucous membranes, or genital samples.",
+        "unit": "Positive/Negative",
+        "referenceRange": { "min": "Negative", "max": "Negative" },
+        "aliases": ["HSV PCR", "Herpes PCR"]
+      },
+      "StreptococcusAntigen": {
+        "description": "Detects the presence of *Streptococcus* antigens, which cause throat infections (strep throat).",
+        "unit": "Positive/Negative",
+        "referenceRange": { "min": "Negative", "max": "Negative" },
+        "aliases": ["Strep Test", "Streptococcus Test"]
+      },
+      "CandidaCulture": {
+        "description": "Detects *Candida* species, a common fungal pathogen that can cause infections in the mouth, throat, vagina, or skin.",
+        "unit": "Species",
+        "referenceRange": { "min": "No Growth", "max": "Candida Identified" },
+        "aliases": ["Candida Test", "Yeast Infection Culture"]
+      },
+      "MycobacteriumTuberculosisCulture": {
+        "description": "Detects *Mycobacterium tuberculosis*, the bacteria responsible for tuberculosis (TB), from respiratory or other body fluid samples.",
+        "unit": "Species",
+        "referenceRange": { "min": "No Growth", "max": "Mycobacterium tuberculosis Identified" },
+        "aliases": ["TB Culture", "Tuberculosis Culture"]
+      },
+      "ViralLoadQuantification": {
+        "description": "Quantifies the amount of viral genetic material present in a sample, used for tracking viral infections like HIV, Hepatitis, or COVID-19.",
+        "unit": "Copies/mL",
+        "referenceRange": { "min": 0, "max": "Varies by virus" },
+        "aliases": ["Viral Load", "Viral Quantification"]
+      },
+      "BacterialResistanceTesting": {
+        "description": "Tests bacteria for resistance to various antibiotics to guide treatment, often used for bacterial infections like pneumonia or urinary tract infections.",
+        "unit": "Resistance Profile",
+        "referenceRange": { "min": "Susceptible", "max": "Resistant" },
+        "aliases": ["Antibiotic Resistance", "Resistance Test"]
+      },
+      "HSVGenotype": {
+        "description": "Determines the type of *Herpes Simplex Virus* (HSV-1 or HSV-2) from a swab sample, useful for guiding treatment.",
+        "unit": "HSV Type",
+        "referenceRange": { "min": "HSV-1", "max": "HSV-2" },
+        "aliases": ["HSV Typing", "Herpes Genotype Test"]
+      },
+      "GonorrheaResistanceTesting": {
+        "description": "Tests *Neisseria gonorrhoeae* for resistance to antibiotics, especially to determine treatment for resistant strains.",
+        "unit": "Resistance Profile",
+        "referenceRange": { "min": "Susceptible", "max": "Resistant" },
+        "aliases": ["Gonorrhea Resistance", "Antibiotic Resistance Test"]
+      },
+      "ChlamydiaResistanceTesting": {
+        "description": "Tests *Chlamydia trachomatis* for resistance to antibiotics, important for treatment, especially in cases of recurrent infections.",
+        "unit": "Resistance Profile",
+        "referenceRange": { "min": "Susceptible", "max": "Resistant" },
+        "aliases": ["Chlamydia Resistance", "Antibiotic Resistance"]
+      },
+      "TuberculosisMolecularTest": {
+        "description": "A PCR-based test to detect *Mycobacterium tuberculosis* and its resistance to drugs like rifampin, used for rapid TB diagnosis and resistance screening.",
+        "unit": "Positive/Negative",
+        "referenceRange": { "min": "Negative", "max": "Positive" },
+        "aliases": ["TB PCR Test", "Tuberculosis Molecular Test"]
+      },
+      "ViralGenotyping": {
+        "description": "Identifies specific genetic variants of viruses such as HIV, Hepatitis C, or Influenza, which helps guide treatment decisions.",
+        "unit": "Genotype",
+        "referenceRange": { "min": "Wild-Type", "max": "Mutant Variant" },
+        "aliases": ["Viral Genotype", "Viral Strain Test"]
+      }
+ }

@@ -1,0 +1,120 @@
+/* Biomarker Card */
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+    width: 100%;
+    cursor: pointer;
+}
+.card:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Title and Value */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.value {
+    font-size: 1.1rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.indicator {
+    font-size: 1.4rem;
+}
+
+/* Chart Section */
+.chartContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.chart {
+    position: relative;
+    height: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.rangeBar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #e0f7e9; /* Green for normal range */
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.indicatorDot {
+    position: absolute;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    z-index: 2;
+}
+
+/* Range Labels */
+.rangeLabels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 5px;
+    padding: 0 2px;
+}
+
+/* Updated Date */
+.updatedDate {
+    font-size: 0.85rem;
+    color: #777;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* Footer Section */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Updated Date */
+.updatedDate {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* Arrow */
+.arrow {
+    font-size: 1rem;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.arrow:hover {
+    color: #1a73e8;
+    transform: translateX(5px); /* Adds a subtle movement when hovered */
+}

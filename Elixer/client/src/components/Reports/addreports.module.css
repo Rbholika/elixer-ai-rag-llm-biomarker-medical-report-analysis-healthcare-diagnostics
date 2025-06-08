@@ -1,0 +1,431 @@
+.main_container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: #2c3e50;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    color: white;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.white_btn {
+    background-color: white;
+    color: #2c3e50;
+    padding: 12px 20px;
+    border: none;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.white_btn:hover {
+    background-color: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.title_container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 20px; /* Adds spacing between the icon and title */
+}
+
+.home_icon {
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: white; /* Icon color (green) */
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 1.0rem;
+    margin: 0;
+    color: #2c3e50;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #2c3e50;
+    text-transform: capitalize;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+/* Card Styling */
+.card {
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.backIcon {
+    position: absolute;
+    left: 0;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.backIcon:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.progressContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 40px;
+    gap: 15px;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Progress Bar */
+.progressBar {
+    height: 8px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+    height: 100%;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Step Count */
+.stepCount {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6c757d;
+    margin: 0;
+    white-space: nowrap;
+    min-width: 40px;
+    text-align: right;
+}
+
+.instructions {
+    padding: 25px 30px;
+    font-size: 16px;
+    color: #6c757d;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.6;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 12px;
+    border-left: 4px solid #2c3e50;
+}
+
+.instructions .highlight {
+    font-weight: 600;
+    color: #e74c3c;
+    font-size: 18px;
+}
+
+/* File Input */
+.fileUploadWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+/* Styled button */
+.fileButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    max-width: 400px;
+    margin: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3e50;
+    background-color: #ffffff;
+    border: 2px solid #2c3e50;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fileButton:hover {
+    background-color: #2c3e50;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.fileButton svg {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+}
+
+.fileButton:hover svg {
+    transform: scale(1.1);
+}
+
+/* Hide default input */
+.fileInput {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Hint text */
+.fileHint {
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 15px;
+    line-height: 1.5;
+    max-width: 400px;
+    text-align: center;
+    margin-left: auto;          /* These two */
+    margin-right: auto; 
+}
+
+.optionsContainer {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.testOptions {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 600px;
+    gap: 15px;
+    
+}
+
+.optionButton {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    background-color: rgba(52, 152, 219, 0.1);
+    color: #2c3e50;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.optionButton:hover {
+    background-color: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.selected {
+    background-color: #e8f6f3;
+    border-color: #28a745;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.15);
+}
+
+.testType {
+    font-weight: 600;
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.testDescription {
+    font-size: 15px;
+    color: #6c757d;
+    line-height: 1.5;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 600px;
+    gap: 20px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between; /* Ensures buttons are on opposite sides */
+    align-items: center; /* Aligns buttons vertically if needed */
+    margin-top: 30px; /* Add spacing from other elements */
+    width: 100%; /* Ensures the container takes the full width */
+}
+
+.backButton {
+    font-weight: 600;
+    background-color: #cccccc;
+    color: #333333;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.backButton:hover {
+    background-color: #b3b3b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nextButton {
+    font-weight: 600;
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nextButton:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.submitButton {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submitButton:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Date Input */
+.dateInput {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 16px;
+    font-size: 15px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dateInput:focus {
+    outline: none;
+    border-color: #2c3e50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Area */
+.textArea {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    padding: 16px;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    font-size: 15px;
+    margin: 20px 0;
+    resize: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    line-height: 1.6;
+}
+
+.textArea:focus {
+    outline: none;
+    border-color: #2c3e50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
