@@ -528,33 +528,6 @@ body, html {
     color: #ffffff; /* White text on hover */
 }
 
-/*
-
-<LineChart xAxis={[
-    {
-    id: 'Years',
-    data: message.years,
-    scaleType: 'time',
-    valueFormatter: (date) => monthNames[date.getMonth() - 1],
-    },
-]}
-series={[
-    {
-    id: 'Values',
-    data: message.values,
-    stack: 'total',
-    area: true,
-    showMark: false,
-    },
-]}
-margin={"0px"}
-border={"0px"}
-padding={"0px"}
-width={600}
-height={300} ></LineChart>
-
-                                        */
-
 .main_wrapper {
     min-height: 100vh;
     background-color: #f8f9fa;
