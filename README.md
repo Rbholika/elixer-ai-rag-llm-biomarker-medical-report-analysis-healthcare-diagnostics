@@ -119,11 +119,4 @@ This project is licensed under the **MIT License** - see the `LICENSE` file for 
 * AWS and Google for cloud and AI services
 * FontAwesome for beautiful UI icons
 
----
 
-## 🔗 Useful Links
-
-* [Choose a License](https://choosealicense.com/)
-* [GitHub Docs](https://docs.github.com/en)
-* [Gemini AI](https://deepmind.google/technologies/gemini/)
-* [Recharts Documentation](https://recharts.org/en-US/)
