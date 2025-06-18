@@ -1,6 +1,6 @@
 # Elixer AI: RAG-Enabled LLM for Automated Medical Report Analysis and Actionable Health Insights
 
-![Project Architecure Design](Architecture.png)
+![Project Architecure Design](Architecture.jpg)
 
 Elixer AI is a next-generation medical diagnostics assistant built with Retrieval-Augmented Generation (RAG)-enabled Large Language Model (LLM) capabilities. Unlike traditional report viewers, Elixer AI interprets biomarkers from medical lab reports (blood, urine, sperm, stool, and pap smear) with clinical precision, providing actionable health insights, visualization, and daily biomarker tracking. The platform supports secure report uploads, multi-report monitoring, and privacy-aware diagnostics.
 

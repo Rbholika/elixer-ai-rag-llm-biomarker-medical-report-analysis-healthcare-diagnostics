@@ -1,0 +1,48 @@
+# Version control
+.git
+.gitignore
+
+# Dependencies
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Build outputs
+client/build
+client/dist
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE files
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+__tests__
+*.test.js
+*.spec.js
+coverage
+
+# Documentation
+README.md
+LICENSE
+*.md
+
+# Other
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.seed
+*.pid.lock 

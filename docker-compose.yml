@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # Client port
+      - "5000:5000"  # Server port
+    environment:
+      - NODE_ENV=production
+      - MONGODB_URI=mongodb://mongodb:27017/elixer
+      - PORT=5000
+      - CLIENT_PORT=3000
+      # Add other environment variables as needed
+      # - AWS_ACCESS_KEY_ID=your_access_key
+      # - AWS_SECRET_ACCESS_KEY=your_secret_key
+      # - GOOGLE_APPLICATION_CREDENTIALS=your_google_credentials
+    depends_on:
+      - mongodb
+    volumes:
+      - ./server/data:/app/server/data
+    restart: unless-stopped
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      - MONGO_INITDB_DATABASE=elixer
+    restart: unless-stopped
+
+volumes:
+  mongodb_data: 
