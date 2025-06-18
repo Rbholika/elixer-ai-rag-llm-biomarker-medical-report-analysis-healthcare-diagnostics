@@ -1,8 +1,13 @@
+# Node modules
 /client/node_modules
 /node_modules
 /server/node_modules
+
+# Environment files
 /server/.env
 /Elixer/.env
 /.env
 /Elixer/Elixer/.env
-.DB_Store
+
+# OS-specific files
+.DS_Store
